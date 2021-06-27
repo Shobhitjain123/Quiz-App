@@ -1,0 +1,130 @@
+%section {
+  margin-top: 28px;
+  @media (min-width: 592px) {
+    margin-top: 42px;
+  }
+  span {
+    font: 500 15px Overpass;
+  }
+  button {
+    &:hover {
+      transition: transform 0.3s;
+      transform: scale(1.01);
+    }
+    transition: transform 0.3s;
+  }
+}
+%margin {
+  margin-top: 38px;
+  position: relative;
+}
+.Quizzes {
+  font-family: Overpass;
+  max-width: 500px;
+  padding: 0 25px;
+  width: 100%;
+  align-self: center;
+  justify-self: normal;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    &::placeholder {
+      color: rgba(22, 22, 69, 0.3);
+    }
+    color: black;
+    background: #0a0a1f;
+    width: 100%;
+    border: 0;
+    padding: 0 40px 0 55px;
+    height: 50px;
+    background: #e6e6ea;
+    border-radius: 7px;
+    font-size: 18px;
+  }
+  &__recommended {
+    @extend %margin;
+  }
+  &__recommended-wrapper {
+    margin-top: 8px;
+  }
+  &__searched {
+    @extend %margin;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 9px;
+  }
+  &__search {
+    @extend %margin;
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    font-size: 19px;
+    position: absolute;
+    left: 20px;
+    fill: rgba(22, 22, 69, 0.3);
+  }
+
+  &__list {
+    @extend %section;
+    &--show {
+      margin-bottom: 55px;
+    }
+  }
+  &__list-container {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+    gap: 9px;
+    margin-top: 8px;
+  }
+
+  &__title {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    font-weight: 600;
+    font-family: Overpass;
+    font-size: clamp(14px, 4.2vw, 18px);
+    color: rgba(255, 255, 255, 0.88);
+    text-align: left;
+    width: 85%;
+  }
+  &__categories {
+    @extend %section;
+  }
+  &__categories-button {
+    position: relative;
+    border: 0;
+    background-color: #e8e8e8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    padding-top: 97%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.16);
+  }
+  &__categories-title {
+    font-size: clamp(14px, 4.2vw, 18px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    color: white;
+  }
+  &__categories-container {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    gap: 9px;
+    margin-top: 8px;
+  }
+  &__not-found {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+}

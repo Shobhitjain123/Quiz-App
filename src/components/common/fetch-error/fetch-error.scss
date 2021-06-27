@@ -1,0 +1,28 @@
+.Fetch-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+  &__img {
+    width: 203px;
+  }
+  &__message {
+    margin-top: 25px;
+    font: 20px/138% Overpass;
+    text-align: center;
+    font-family: Overpass;
+    color: #7a7ba2;
+  }
+  &__button {
+    background: #5255ca;
+    border-radius: 8px;
+    height: 45px;
+    margin-top: 24px;
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    max-width: 250px;
+  }
+}

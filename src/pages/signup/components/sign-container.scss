@@ -1,0 +1,75 @@
+.Sign {
+  &__background-container {
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+    min-height: 390px;
+
+    @media (min-width: 550px) {
+      border-radius: 20px;
+      margin-bottom: 70px;
+      max-height: 420px;
+    }
+  }
+  &__call {
+    margin-left: 5px;
+  }
+  &__container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 70%;
+    justify-content: space-around;
+    &--login {
+      max-height: 300px;
+    }
+    .MuiInputBase-root {
+      font: 16px Overpass;
+    }
+
+    .MuiInputLabel-root {
+      color: #9fa0d5;
+    }
+    label {
+      font: 16px Overpass;
+    }
+    .MuiOutlinedInput-root:hover {
+      border-color: pink;
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border-color: #5255ca;
+      border-width: 1px;
+    }
+
+    .MuiInputBase-input {
+      height: 14px;
+    }
+
+    .PrivateNotchedOutline-legendLabelled-3 {
+      height: 11.2px;
+    }
+
+    .MuiInputBase-root {
+      margin-top: 3px;
+    }
+  }
+  &__login-error {
+    margin-bottom: 15px;
+    font: 15px Roboto;
+    color: red;
+  }
+
+  &__advice {
+    font-size: 16px;
+    color: #0a0a1f;
+    align-self: center;
+    margin-top: 42px;
+  }
+}

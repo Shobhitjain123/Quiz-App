@@ -1,0 +1,48 @@
+.menu-icon {
+  height: 11px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 99;
+
+  &__bar {
+    transition: all 2s;
+    width: 18px;
+    height: 2px;
+    &:not(:first-child) {
+      margin-top: 3px;
+    }
+    background-color: white;
+    border-radius: 9px;
+    &--clicked {
+      &:nth-child(1) {
+        transform: rotate(-45deg) translate(-4px, 3px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(45deg) translate(-4px, -3px);
+      }
+    }
+  }
+}
+
+.childrenAnimation {
+  animation: children 0.7s alternate forwards;
+}
+
+@keyframes children {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    top: 300px;
+    opacity: 0;
+  }
+}

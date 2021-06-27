@@ -1,0 +1,26 @@
+.Presentation {
+  color: white;
+  width: 80%;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  position: relative;
+  max-width: 550px;
+  @media (min-width: 550px) {
+    margin-top: 14px;
+  }
+  padding: 30px 0;
+  &__menu {
+    position: absolute;
+    top: 32px;
+    right: 10px;
+  }
+  &__title {
+    font: 24px Overpass;
+  }
+  &__description {
+    margin: 7px 0 0 2px;
+    font: 300 14px Overpass;
+    width: 90%;
+  }
+}
